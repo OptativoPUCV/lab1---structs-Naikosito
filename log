@@ -19,3 +19,22 @@ exercises.c:65:12: error: expected expression before ‘[’ token
       |            ^
 Compilation failed
 2487210
+Thu 14 Mar 2024 08:34:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:12: error: expected expression before ‘[’ token
+   65 |   result = [size1 + size2]
+      |            ^
+exercises.c:65:27: error: expected ‘;’ before ‘while’
+   65 |   result = [size1 + size2]
+      |                           ^
+      |                           ;
+   66 |   while (i < size1 && j < size2)
+      |   ~~~~~                    
+exercises.c:69:5: error: ‘else’ without a previous ‘if’
+   69 |     else
+      |     ^~~~
+Compilation failed
+0939edc
