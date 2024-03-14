@@ -154,3 +154,16 @@ Thu 14 Mar 2024 08:46:37 PM UTC:
  tests:  0|5
 total_score: 20/70
 09bddbb
+Thu 14 Mar 2024 08:48:38 PM UTC: 
+ exercises.c | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:64:8: error: ‘result’ redeclared as different kind of symbol
+   64 |   int *result = (int *)malloc((size1 + size2) * sizeof(int));
+      |        ^~~~~~
+exercises.c:62:74: note: previous definition of ‘result’ with type ‘int *’
+   62 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+      |                                                                      ~~~~^~~~~~~~
+Compilation failed
+b7a305f
