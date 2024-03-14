@@ -1,1 +1,11 @@
 
+Thu 14 Mar 2024 08:33:53 PM UTC: 
+ exercises.c | 48 +++++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 45 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:66:12: error: expected expression before ‘[’ token
+   66 |   result = [size1 + size2];
+      |            ^
+Compilation failed
+f878255

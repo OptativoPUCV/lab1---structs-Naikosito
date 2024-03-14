@@ -9,7 +9,15 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int arr[], int size) 
+{
+  int mayor = arr[0];
+  for (int i = 1; i < size; i++)
+    if (arr[i] > mayor)
+      mayor = arr[i];
+
+  return mayor;
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -24,7 +32,26 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) 
+{ 
+  int contador = 0;
+
+  for (int i = 0; i < size; i++)
+    if (arr[i] % 2 == 0) //si el residuo da 0 es par
+      contador++;
+  
+  int *NuevoArray = (int *)malloc(contador * sizeof(int));
+
+  int k = 0;
+  
+  for (int j = 0; j < size; j++)
+    if (arr[j] % 2 == 0)
+      NuevoArray[k++] = arr[j];
+
+  *newSize = contador;
+  
+  return NuevoArray; 
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -33,7 +60,22 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) 
+{
+  int i = 0, j = 0, k = 0;
+  result = [size1 + size2];
+  while (i < size1 && j < size2)
+    if (arr1[i] < arr2[j])
+      result[k++] = arr1[i++];
+    else
+      result[k++] = arr2[j++];
+
+  while (i < size1)
+    result[k++] = arr1[i++];
+    
+  while (k < size2)
+      result[k++] = arr2[i++];
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
