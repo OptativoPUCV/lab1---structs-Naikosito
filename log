@@ -38,3 +38,13 @@ exercises.c:69:5: error: ‘else’ without a previous ‘if’
       |     ^~~~
 Compilation failed
 0939edc
+Thu 14 Mar 2024 08:35:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:13: error: expected expression before ‘[’ token
+   65 |   *result = [size1 + size2];
+      |             ^
+Compilation failed
+20a3e07
