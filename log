@@ -597,3 +597,13 @@ exercises.c:122:30: error: expected expression before ‘)’ token
       |                              ^
 Compilation failed
 22dbf88
+Thu 14 Mar 2024 09:06:55 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:122:18: error: expected expression before ‘)’ token
+  122 |   libro = (libro*) malloc(sizeof(libro) * 1);
+      |                  ^
+Compilation failed
+0d7b183
