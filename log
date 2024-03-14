@@ -128,3 +128,23 @@ Thu 14 Mar 2024 08:44:01 PM UTC:
  tests:  0|5
 total_score: 20/70
 8cf94ee
+Thu 14 Mar 2024 08:45:57 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:69:26: error: expected ‘)’ before ‘{’ token
+   69 |     if (arr1[i] < arr2[j]
+      |        ~                 ^
+      |                          )
+   70 |     {
+      |     ~                     
+exercises.c:79:1: error: expected expression before ‘}’ token
+   79 | }
+      | ^
+exercises.c:66:21: error: unused variable ‘k’ [-Werror=unused-variable]
+   66 |   int i = 0, j = 0, k = 0;
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+afa68ab
