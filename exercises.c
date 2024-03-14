@@ -119,9 +119,10 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) 
 {
-  libro = (libro)  malloc(sizeof(libro) * 1);
   strcpy(libro->titulo, titulo);
   libro->anioPublicacion = anioPublicacion;
+  strcpy(libro->autor.nombre, nombreAutor);
+  libro->autor.anioNacimiento = anioNacimiento;
 }
 
 /*
