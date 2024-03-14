@@ -583,3 +583,17 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 3fa4846
+Thu 14 Mar 2024 09:06:23 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:122:10: error: ‘nuevoLibro’ undeclared (first use in this function)
+  122 |   libro* nuevoLibro = (libro*) malloc(sizeof(libro) * 1);
+      |          ^~~~~~~~~~
+exercises.c:122:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:122:30: error: expected expression before ‘)’ token
+  122 |   libro* nuevoLibro = (libro*) malloc(sizeof(libro) * 1);
+      |                              ^
+Compilation failed
+22dbf88
