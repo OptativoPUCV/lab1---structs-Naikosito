@@ -24,7 +24,15 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) 
+{
+  int temp;
+
+  for (int i = 0; i < size / 2; i++)
+    temp = arr[i];
+    arr[i] = arr[size - i - 1];
+    arr[size - i - 1] = temp;
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -61,7 +69,7 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) 
 {
-  int *result = (int *)malloc((size1 + size2) * sizeof(int));
+  result = (int *)malloc((size1 + size2) * sizeof(int));
   
   int i = 0, j = 0, k = 0;
 
