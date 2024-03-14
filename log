@@ -78,3 +78,35 @@ exercises.c:65:7: error: variable ‘result’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 3586ee5
+Thu 14 Mar 2024 08:37:08 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:8: error: ‘result’ redeclared as different kind of symbol
+   65 |   int* result[] = [size1 + size2];
+      |        ^~~~~~
+exercises.c:62:74: note: previous definition of ‘result’ with type ‘int *’
+   62 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+      |                                                                      ~~~~^~~~~~~~
+exercises.c:65:19: error: expected expression before ‘[’ token
+   65 |   int* result[] = [size1 + size2];
+      |                   ^
+exercises.c:68:19: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   68 |       result[k++] = arr1[i++];
+      |                   ^
+exercises.c:70:19: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   70 |       result[k++] = arr2[j++];
+      |                   ^
+exercises.c:73:17: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   73 |     result[k++] = arr1[i++];
+      |                 ^
+exercises.c:76:19: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   76 |       result[k++] = arr2[i++];
+      |                   ^
+exercises.c:65:8: error: variable ‘result’ set but not used [-Werror=unused-but-set-variable]
+   65 |   int* result[] = [size1 + size2];
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9bf3056
