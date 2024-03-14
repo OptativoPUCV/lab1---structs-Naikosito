@@ -202,3 +202,20 @@ exercises.c:75:9: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 c9f486f
+Thu 14 Mar 2024 08:54:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:7: error: ‘result’ redeclared as different kind of symbol
+   75 |   int result[size1 + size2];
+      |       ^~~~~~
+exercises.c:73:74: note: previous definition of ‘result’ with type ‘int *’
+   73 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+      |                                                                      ~~~~^~~~~~~~
+exercises.c:75:7: error: variable ‘result’ set but not used [-Werror=unused-but-set-variable]
+   75 |   int result[size1 + size2];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+92457aa

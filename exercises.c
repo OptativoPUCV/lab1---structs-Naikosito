@@ -72,7 +72,7 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) 
 {
-  result[size1 + size2];
+  int result[size1 + size2];
   
   int i = 0, j = 0, k = 0;
 
