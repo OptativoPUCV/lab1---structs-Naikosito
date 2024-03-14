@@ -58,3 +58,23 @@ exercises.c:65:10: error: expected expression before ‘]’ token
       |          ^
 Compilation failed
 7ff6f4a
+Thu 14 Mar 2024 08:36:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:7: error: ‘result’ redeclared as different kind of symbol
+   65 |   int result[] = [size1 + size2];
+      |       ^~~~~~
+exercises.c:62:74: note: previous definition of ‘result’ with type ‘int *’
+   62 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+      |                                                                      ~~~~^~~~~~~~
+exercises.c:65:18: error: expected expression before ‘[’ token
+   65 |   int result[] = [size1 + size2];
+      |                  ^
+exercises.c:65:7: error: variable ‘result’ set but not used [-Werror=unused-but-set-variable]
+   65 |   int result[] = [size1 + size2];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3586ee5
