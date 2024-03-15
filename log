@@ -681,3 +681,14 @@ Fri 15 Mar 2024 08:35:39 PM UTC:
  tests:  0|2
 total_score: 50/70
 19809e5
+Fri 15 Mar 2024 08:47:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:156:9: error: unused variable ‘cabeza’ [-Werror=unused-variable]
+  156 |   Nodo *cabeza = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+eee6dc6
