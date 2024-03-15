@@ -97,11 +97,17 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) 
 { 
+  int ascendente = 1;
+  int descendente = 1;
+  
   for (int i = 0; i < size - 1; i++)
     if (arr[i] > arr[i + 1])
-      return -1;
+      ascendente = 0;
     else if (arr[i] < arr[i + 1])
-      return 1;
+      descendente = 0;
+
+  if (ascendente == 0) return 1;
+  if (ascendente == 0) return -1;
   
   return 0;
 }
@@ -153,7 +159,11 @@ typedef struct nodo {
 Nodo *crearListaEnlazada(int arr[], int size) 
 
 { 
+  if (size == 0) exit(EXIT_FAILURE);
+  Nodo *lista = (Nodo *)malloc(sizeof(Nodo));
   
+  lista->numero = arr[0];
+  lista->siguiente = NULL;
   
   
   
