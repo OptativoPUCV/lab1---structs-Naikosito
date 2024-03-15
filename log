@@ -692,3 +692,9 @@ exercises.c:156:9: error: unused variable ‘cabeza’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 eee6dc6
+Fri 15 Mar 2024 08:48:06 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+c29148c
