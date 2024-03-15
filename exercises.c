@@ -163,9 +163,9 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 
-{ 
-  if (size == 0) exit(EXIT_FAILURE);
+{
   Nodo *lista = (Nodo *)malloc(sizeof(Nodo));
+  if (lista == NULL) exit(EXIT_FAILURE);
   
   lista->numero = arr[0];
   lista->siguiente = NULL;
