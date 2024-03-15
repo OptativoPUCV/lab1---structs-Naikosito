@@ -100,7 +100,7 @@ int checkSorted(int arr[], int size)
   int ascendente = 1; 
   int descendente = 1;
 
-  for (int i = 1; i < n; i++) 
+  for (int i = 1; i < size; i++) 
   {
       if (arr[i - 1] > arr[i]) 
           ascendente = 0;

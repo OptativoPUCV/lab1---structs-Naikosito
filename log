@@ -756,3 +756,9 @@ exercises.c:103:23: error: ‘n’ undeclared (first use in this function)
 exercises.c:103:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 dc251ff
+Fri 15 Mar 2024 09:01:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+578938d
